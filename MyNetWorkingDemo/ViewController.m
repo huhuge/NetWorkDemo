@@ -23,9 +23,9 @@
     NSLog(@"test");
     
     NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
-    [dic setObject: @"" forKey:@"departmentName"];
-    [dic setObject:@"" forKey:@"coordinateContent"];
-    [dic setObject:@"" forKey:@"departmentId"];
+    [dic setObject:@"1" forKey:@"departmentName"];
+    [dic setObject:@"2" forKey:@"coordinateContent"];
+    [dic setObject:@"3" forKey:@"departmentId"];
     [ShowMessage showLoadingData:self.view strMessage:@"提交中..."];
     
     
@@ -44,6 +44,8 @@
         [ShowMessage showTextOnly:@"提交失败" messageView:self.view];
         
     }];
+    
+    
     ////get
     [[HYHttp sharedHYHttp]GET:@"http://www.acbb.cc/carmanagerservice/interface?method=queryAdvertisments&position=1" parameters:dic success:^(id  _Nonnull responseObject) {
         
