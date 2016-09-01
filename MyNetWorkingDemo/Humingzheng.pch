@@ -1,0 +1,29 @@
+//
+//  Humingzheng.pch
+//  MyNetWorkingDemo
+//
+//  Created by JeroMac on 16/7/13.
+//  Copyright © 2016年 HMZ. All rights reserved.
+//
+
+#ifndef Humingzheng_h
+#define Humingzheng_h
+
+
+//#define API_URL_BASE @"http://www.acbb.cc"
+#define API_URL_BASE @""
+#define kRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define kLog(fmt,...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ## __VA_ARGS__);
+
+
+#import "Singleton.h"
+
+#import "HYHttp.h"
+
+#import "MBProgressHUD.h"
+
+#import "ShowMessage.h"
+
+#import "AFNetWorking.h"
+
+#endif /* Humingzheng_h */
